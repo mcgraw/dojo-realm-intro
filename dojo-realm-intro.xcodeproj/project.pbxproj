@@ -11,12 +11,12 @@
 		F07A84201A42499B0078BD05 /* XMCMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07A841F1A42499B0078BD05 /* XMCMovieViewController.swift */; };
 		F07A84231A42499B0078BD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F07A84211A42499B0078BD05 /* Main.storyboard */; };
 		F07A84251A42499B0078BD05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07A84241A42499B0078BD05 /* Images.xcassets */; };
-		F07A84281A42499B0078BD05 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07A84261A42499B0078BD05 /* LaunchScreen.xib */; };
 		F07A843E1A4249B70078BD05 /* XMCApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07A843D1A4249B70078BD05 /* XMCApi.swift */; };
 		F07A84401A42576F0078BD05 /* XMCMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07A843F1A42576F0078BD05 /* XMCMovie.swift */; };
 		F07A84461A4274C60078BD05 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07A84451A4274C60078BD05 /* Realm.framework */; };
 		F07A84481A4274DD0078BD05 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F07A84471A4274DD0078BD05 /* libc++.dylib */; };
 		F07A844C1A4275040078BD05 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07A844B1A4275040078BD05 /* RLMSupport.swift */; };
+		F083C4A21A42913100EAB109 /* LaunchScreen_rank_3.xib in Resources */ = {isa = PBXBuildFile; fileRef = F083C4A11A42913100EAB109 /* LaunchScreen_rank_3.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +26,12 @@
 		F07A841F1A42499B0078BD05 /* XMCMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMCMovieViewController.swift; sourceTree = "<group>"; };
 		F07A84221A42499B0078BD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F07A84241A42499B0078BD05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F07A84271A42499B0078BD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F07A843D1A4249B70078BD05 /* XMCApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMCApi.swift; sourceTree = "<group>"; };
 		F07A843F1A42576F0078BD05 /* XMCMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMCMovie.swift; sourceTree = "<group>"; };
 		F07A84451A4274C60078BD05 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		F07A84471A4274DD0078BD05 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		F07A844B1A4275040078BD05 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		F083C4A11A42913100EAB109 /* LaunchScreen_rank_3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen_rank_3.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 				F07A844B1A4275040078BD05 /* RLMSupport.swift */,
 				F07A84241A42499B0078BD05 /* Images.xcassets */,
 				F07A84211A42499B0078BD05 /* Main.storyboard */,
-				F07A84261A42499B0078BD05 /* LaunchScreen.xib */,
+				F083C4A11A42913100EAB109 /* LaunchScreen_rank_3.xib */,
 				F07A841B1A42499B0078BD05 /* Supporting Files */,
 			);
 			path = "dojo-realm-intro";
@@ -154,8 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F083C4A21A42913100EAB109 /* LaunchScreen_rank_3.xib in Resources */,
 				F07A84231A42499B0078BD05 /* Main.storyboard in Resources */,
-				F07A84281A42499B0078BD05 /* LaunchScreen.xib in Resources */,
 				F07A84251A42499B0078BD05 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,14 +184,6 @@
 				F07A84221A42499B0078BD05 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F07A84261A42499B0078BD05 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F07A84271A42499B0078BD05 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
