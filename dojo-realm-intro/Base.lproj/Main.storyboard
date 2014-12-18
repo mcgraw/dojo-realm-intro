@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="XMCMovieViewController" customModule="dojo_realm_intro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hobbit" translatesAutoresizingMaskIntoConstraints="NO" id="6hX-1I-v6v">
+                                <rect key="frame" x="210" y="28" width="180" height="267"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6hX-1I-v6v" secondAttribute="height" multiplier="60:89" id="NlY-Ge-WPH"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="267" id="c9h-6k-0tO"/>
+                                    <constraint firstAttribute="width" constant="180" id="zPc-ki-Juv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Hobbit: The Battle Of The Five Armies" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Je2-R6-mjE">
+                                <rect key="frame" x="20" y="320" width="560" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOd-BI-0z7">
+                                <rect key="frame" x="36" y="354" width="528" height="70"/>
+                                <string key="text">Suitably grim, epic, and action-packed, The Hobbit: The Battle of the Five Armies ends Peter Jackson's second Middle-earth trilogy on a rousing high note.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le6-7o-bKp">
+                                <rect key="frame" x="252" y="432" width="97" height="61"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xam-J3-X4I">
+                                <rect key="frame" x="480" y="536" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="a8J-sA-E5W"/>
+                                    <constraint firstAttribute="height" constant="44" id="gnX-YE-wOD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextActionPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Ml-Vf-Suq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70396243462222219" green="0.0" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="6hX-1I-v6v" firstAttribute="centerX" secondItem="Je2-R6-mjE" secondAttribute="centerX" id="2Fx-Yr-xf8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="le6-7o-bKp" secondAttribute="bottom" constant="20" id="42Z-Yb-ErF"/>
+                            <constraint firstItem="le6-7o-bKp" firstAttribute="top" secondItem="aOd-BI-0z7" secondAttribute="bottom" constant="8" id="BHp-1W-1ta"/>
+                            <constraint firstItem="aOd-BI-0z7" firstAttribute="top" secondItem="Je2-R6-mjE" secondAttribute="bottom" constant="10" id="CzT-Rt-7Zc"/>
+                            <constraint firstItem="Je2-R6-mjE" firstAttribute="top" secondItem="6hX-1I-v6v" secondAttribute="bottom" constant="25" id="Gtr-9X-Pno"/>
+                            <constraint firstItem="6hX-1I-v6v" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="WEV-t3-dUf"/>
+                            <constraint firstItem="Je2-R6-mjE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Xil-eQ-vav"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xam-J3-X4I" secondAttribute="bottom" constant="20" id="Zwm-4e-hmN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xam-J3-X4I" secondAttribute="trailing" constant="4" id="bww-U3-uWX"/>
+                            <constraint firstItem="aOd-BI-0z7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="c3q-od-Xup"/>
+                            <constraint firstItem="aOd-BI-0z7" firstAttribute="centerX" secondItem="le6-7o-bKp" secondAttribute="centerX" constant="-0.5" id="fXH-ND-fc5"/>
+                            <constraint firstAttribute="centerX" secondItem="6hX-1I-v6v" secondAttribute="centerX" id="nET-yc-FGR"/>
+                            <constraint firstAttribute="trailing" secondItem="Je2-R6-mjE" secondAttribute="trailing" constant="20" id="qoS-yL-G2s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOd-BI-0z7" secondAttribute="trailing" constant="20" id="tT2-VS-yoe"/>
+                            <constraint firstItem="Je2-R6-mjE" firstAttribute="centerX" secondItem="aOd-BI-0z7" secondAttribute="centerX" id="xJ3-Ue-HP5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieDescription" destination="aOd-BI-0z7" id="6AB-0m-7Kq"/>
+                        <outlet property="moviePoster" destination="6hX-1I-v6v" id="bKD-QM-yc9"/>
+                        <outlet property="movieRating" destination="le6-7o-bKp" id="KYb-w5-LiT"/>
+                        <outlet property="movieTitle" destination="Je2-R6-mjE" id="DSV-rj-qkN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hobbit" width="180" height="267"/>
+    </resources>
+</document>
