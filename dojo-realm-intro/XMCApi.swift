@@ -6,10 +6,9 @@
 //  Copyright (c) 2014 David McGraw. All rights reserved.
 //
 
-import UIKit
 import Realm
 
-class XMCApi: NSObject {
+class XMCApi {
     
     class func requestOpeningMovies() {
         let movies = [ XMCMovie(id: "0", title: "The Hobbit: The Battle Of The Five Armies", tomatometer: 62, consensus: "Suitably grim, epic, and action-packed, The Hobbit: The Battle of the Five Armies ends Peter Jackson's second Middle-earth trilogy on a rousing high note.", imageName: "hobbit"),
