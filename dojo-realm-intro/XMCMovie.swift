@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 David McGraw. All rights reserved.
 //
 
-import UIKit
 import Realm
 
 class XMCMovie: RLMObject {

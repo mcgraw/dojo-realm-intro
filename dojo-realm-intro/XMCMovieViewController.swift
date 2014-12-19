@@ -17,9 +17,9 @@ class XMCMovieViewController: UIViewController {
     @IBOutlet weak var movieRating: UILabel!
 
     // This query will grab all of our movies
-    // var movies = XMCMovie.allObjects()
+    // let movies = XMCMovie.allObjects()
     // This query will only grab movies with ratings less than the provided amount
-    var movies = XMCMovie.objectsWhere("tomatometer < 60")
+    let movies = XMCMovie.objectsWhere("tomatometer < 60")
     var index = UInt(0)
 
     override func viewDidLoad() {
